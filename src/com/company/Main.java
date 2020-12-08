@@ -12,7 +12,7 @@ public class Main {
         System.load("F:\\Nikita\\MPr\\opencv\\build\\java\\x64\\opencv_java343.dll");
         CascadeClassifier faceDetector = new CascadeClassifier();
         faceDetector.load("F:\\Nikita\\MPr\\opencv\\build\\etc\\haarcascades\\haarcascade_frontalface_default.xml");
-        Mat img = imread("nika.jpeg", CV_LOAD_IMAGE_COLOR);
+        Mat img = imread(".jpeg", CV_LOAD_IMAGE_COLOR);
 
         MatOfRect faceDetections = new MatOfRect();
         faceDetector.detectMultiScale(img, faceDetections);
